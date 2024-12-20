@@ -1,0 +1,127 @@
+.Loginpage-Container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://i.pinimg.com/736x/fb/f0/ef/fbf0efd993d06415633881cd7b0c43de.jpg");
+}
+.signuppage-Container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://i.pinimg.com/736x/fb/f0/ef/fbf0efd993d06415633881cd7b0c43de.jpg");
+}
+
+.password-container {
+  display: flex;
+  justify-content: space-between;
+}
+.emailLable {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forgotContainer {
+  position: absolute;
+  top: -28rem;
+  z-index: 1;
+  text-align: center;
+}
+.blur {
+  filter: blur(5px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.eye {
+  position: relative;
+  top: -2rem;
+  left: 11rem;
+  color: gray;
+}
+
+.eye:hover {
+  cursor: pointer;
+}
+
+.otpinput {
+  width: 10rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.5rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  padding-left: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-Container {
+  width: 80%;
+  height: 80%;
+  background-color: #3eb3f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Homecontainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/search-bar-icon-search-3d-render-minimal-design-multicolor-background_41204-14142.jpg?semt=ais_hybrid");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.subContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background-image: url("https://img.freepik.com/free-vector/neon-fingerprint-background_23-2148364032.jpg");
+  background-size: contain;
+}
+.titleText {
+  text-shadow: 2px 3px red;
+}
+.logincir {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("https://www.freeiconspng.com/thumbs/login-icon/user-login-icon-14.png");
+  background-size: contain;
+}
