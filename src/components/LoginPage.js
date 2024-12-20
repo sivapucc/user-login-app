@@ -33,13 +33,16 @@ export function Loginpage() {
         email,
         password,
       };
-      const response = await fetch("http://localhost:9080/login", {
-        method: "POST",
-        body: JSON.stringify(userData),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://user-login-be-pi.vercel.app/login",
+        {
+          method: "POST",
+          body: JSON.stringify(userData),
+          headers: {
+            "Content-type": "application/json",
+          },
+        }
+      );
       let data = await response.json();
       console.log(data);
       navigate(`/dashboard`, {
@@ -56,7 +59,7 @@ export function Loginpage() {
       foemail,
     };
 
-    const response = await fetch("http://localhost:9080/forgot", {
+    const response = await fetch("https://user-login-be-pi.vercel.app/forgot", {
       method: "POST",
       body: JSON.stringify(useremail),
       headers: {

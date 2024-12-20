@@ -27,14 +27,17 @@ export function ResetPassword() {
     };
     if (newpass !== "" && confirm !== "" && newpass === confirm) {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:9080/update/password", {
-        method: "POST",
-        body: JSON.stringify(updatedPassword),
-        headers: {
-          "Content-type": "application/json",
-          token: token,
-        },
-      });
+      const response = await fetch(
+        "https://user-login-be-pi.vercel.app/update/password",
+        {
+          method: "POST",
+          body: JSON.stringify(updatedPassword),
+          headers: {
+            "Content-type": "application/json",
+            token: token,
+          },
+        }
+      );
 
       const data = await response.json();
       if (data.isUpdate === true) {

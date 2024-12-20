@@ -25,13 +25,16 @@ export function Signuppage() {
     };
 
     if (name !== "" && email !== "" && password !== "") {
-      const response = await fetch("http://localhost:9080/signup", {
-        method: "POST",
-        body: JSON.stringify(userData),
-        headers: {
-          "Content-type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://user-login-be-pi.vercel.app/signup",
+        {
+          method: "POST",
+          body: JSON.stringify(userData),
+          headers: {
+            "Content-type": "application/json",
+          },
+        }
+      );
 
       const data = await response.json();
       console.log(data);
