@@ -99,6 +99,20 @@
   justify-content: center;
   color: white;
 }
+
+.welcomecontainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://s17233.pcdn.co/blog/wp-content/uploads/2020/07/Marketing_link-shorten-cutting_Site_0707.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #10a5b2;
+  gap: 2rem;
+}
 .subContainer {
   display: flex;
   align-items: center;
@@ -124,4 +138,9 @@
   border-radius: 50%;
   background-image: url("https://www.freeiconspng.com/thumbs/login-icon/user-login-icon-14.png");
   background-size: contain;
+}
+
+.h-one {
+  font-size: 6rem;
+  text-shadow: 3px 5px blue;
 }

@@ -14,7 +14,9 @@ export function Loginpage() {
   const [blur, setBlur] = useState("");
   const [foemail, setFoemail] = useState("");
   const [error, setError] = useState(false);
+
   const navigate = useNavigate();
+
   const handleClick = () => {
     setEnable(true);
     setBlur("blur");
@@ -45,9 +47,7 @@ export function Loginpage() {
       );
       let data = await response.json();
       console.log(data);
-      navigate(`/dashboard`, {
-        state: data,
-      });
+      window.location.href = `https://urlshortner-sk.netlify.app/?token=${data.token}&name=${data.useName}`;
     } else {
       setError(true);
     }
